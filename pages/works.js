@@ -7,6 +7,8 @@ import {
   Input,
   InputGroup,
   InputRightElement,
+  Text,
+  Link,
 } from "@chakra-ui/react";
 
 import Container from "../components/Container";
@@ -65,6 +67,12 @@ export default function Blog({ posts }) {
             {filteredWorksPosts.map((frontMatter) => (
               <WorksPost key={frontMatter.title} {...frontMatter} />
             ))}
+            <Text fontSize="lg" mb={5}>
+              See more on{" "}
+              <Link href="https://github.com/restufff" fontWeight="medium">
+                Github
+              </Link>
+            </Text>
           </Flex>
         </Stack>
       </Container>

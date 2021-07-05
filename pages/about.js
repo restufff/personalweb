@@ -1,5 +1,12 @@
 import Head from "next/head";
-import { useColorMode, Heading, Text, Flex, Stack } from "@chakra-ui/react";
+import {
+  useColorMode,
+  Heading,
+  Text,
+  Flex,
+  Stack,
+  Link,
+} from "@chakra-ui/react";
 
 import Container from "../components/Container";
 
@@ -61,6 +68,21 @@ export default function About() {
           maxWidth="700px"
         >
           <Heading mb={3}>Contact</Heading>
+          <Heading as="h2" size="md" fontWeight="medium" mb={1}>
+            Email
+          </Heading>
+          <Link mb={5} color={colorSecondary[colorMode]}>
+            restuff222@gmail.com
+          </Link>
+          <Heading as="h2" size="md" fontWeight="medium" mb={1}>
+            Github
+          </Heading>
+          <Link
+            href="https://github.com/restufff "
+            color={colorSecondary[colorMode]}
+          >
+            https://github.com/restufff
+          </Link>
         </Flex>
       </Stack>
     </Container>
