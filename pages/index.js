@@ -33,8 +33,7 @@ export default function Index() {
           <Heading mb={2}>Hi, I'm Restu Fauzi</Heading>
           <Text color={colorSecondary[colorMode]}>
             a self-taught junior front-end developer. I primarily focus on
-            writing clean and efficient code also proficient in HTML, CSS,
-            JavaScript and React.
+            writing clean and efficient code.
           </Text>
         </Flex>
       </Stack>

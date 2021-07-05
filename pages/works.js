@@ -11,14 +11,14 @@ import {
 
 import Container from "../components/Container";
 import { getAllFilesFrontMatter } from "../lib/mdx";
-import BlogPost from "../components/BlogPost";
+import WorksPost from "../components/BlogPost";
 
 import { SearchIcon } from "@chakra-ui/icons";
 
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState("");
 
-  const filteredBlogPosts = posts
+  const filteredWorksPosts = posts
     .sort(
       (a, b) =>
         Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
@@ -61,9 +61,9 @@ export default function Blog({ posts }) {
                 <SearchIcon color="gray.300" />
               </InputRightElement>
             </InputGroup>
-            {!filteredBlogPosts.length && "No posts found :("}
-            {filteredBlogPosts.map((frontMatter) => (
-              <BlogPost key={frontMatter.title} {...frontMatter} />
+            {!filteredWorksPosts.length && "No posts found :("}
+            {filteredWorksPosts.map((frontMatter) => (
+              <WorksPost key={frontMatter.title} {...frontMatter} />
             ))}
           </Flex>
         </Stack>
