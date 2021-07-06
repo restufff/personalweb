@@ -7,8 +7,11 @@ import {
   Stack,
   Link,
 } from "@chakra-ui/react";
-
 import Container from "../components/Container";
+import { LinkIcon } from "@chakra-ui/icons";
+import { IoMail } from "react-icons/io5";
+import { SiGithub } from "react-icons/si";
+import { Icon } from "@chakra-ui/react";
 
 export default function About() {
   const { colorMode } = useColorMode();
@@ -71,17 +74,23 @@ export default function About() {
           <Heading as="h2" size="md" fontWeight="medium" mb={1}>
             Email
           </Heading>
-          <Link mb={5} color={colorSecondary[colorMode]}>
-            restuff222@gmail.com
+          <Link
+            mb={5}
+            color={colorSecondary[colorMode]}
+            href="mailto: restuff222@gmail.com"
+            isExternal
+          >
+            <Icon as={IoMail} /> restuff222@gmail.com
           </Link>
           <Heading as="h2" size="md" fontWeight="medium" mb={1}>
             Github
           </Heading>
           <Link
-            href="https://github.com/restufff "
+            href="https://github.com/restufff"
+            isExternal
             color={colorSecondary[colorMode]}
           >
-            https://github.com/restufff
+            <Icon as={SiGithub} /> https://github.com/restufff
           </Link>
         </Flex>
       </Stack>
