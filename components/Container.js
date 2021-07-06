@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  useColorMode,
-  Button,
-  Flex,
-  Box,
-  Divider,
-  Stack,
-} from "@chakra-ui/react";
+import { useColorMode, Button, Flex, Box } from "@chakra-ui/react";
 import NextLink from "next/link";
 import styled from "@emotion/styled";
 

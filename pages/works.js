@@ -33,6 +33,7 @@ export default function Blog({ posts }) {
     <>
       <Head>
         <title>Works - Restu Fauzi</title>
+        <link rel="icon" href="/logo.png"></link>
       </Head>
       <Container>
         <Stack

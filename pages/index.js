@@ -13,7 +13,7 @@ export default function Index() {
     <Container>
       <Head>
         <title>Home - Restu Fauzi</title>
-        <link rel="shortcut icon" href="/logo.png"></link>
+        <link rel="icon" href="/logo.png"></link>
       </Head>
       <Stack
         as="main"

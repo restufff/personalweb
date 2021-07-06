@@ -20,7 +20,7 @@ export default function About() {
     <Container>
       <Head>
         <title>About Me - Restu Fauzi</title>
-        <link rel="shortcut icon" href="/logo.png"></link>
+        <link rel="icon" href="/logo.png"></link>
       </Head>
       <Stack
         as="main"
@@ -67,7 +67,7 @@ export default function About() {
           alignItems="flex-start"
           maxWidth="700px"
         >
-          <Heading mb={3}>Contact</Heading>
+          <Heading mb={3}>Contacts</Heading>
           <Heading as="h2" size="md" fontWeight="medium" mb={1}>
             Email
           </Heading>
