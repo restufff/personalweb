@@ -33,7 +33,7 @@ export default function Blog({ posts }) {
     <>
       <Head>
         <title>Works - Restu Fauzi</title>
-        <link rel="icon" href="/logo.png"></link>
+        <link rel="shortcut icon" href="/logo.png" />
       </Head>
       <Container>
         <Stack

@@ -25,7 +25,7 @@ export default function BlogLayout({ children, frontMatter }) {
     <Container>
       <Head>
         <title>${slug} - Works - Restu Fauzi</title>
-        <link rel="icon" href="/logo.png"></link>
+        <link rel="shortcut icon" href="/logo.png" />
       </Head>
       <Stack
         as="article"

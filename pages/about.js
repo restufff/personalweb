@@ -20,7 +20,7 @@ export default function About() {
     <Container>
       <Head>
         <title>About Me - Restu Fauzi</title>
-        <link rel="icon" href="/logo.png"></link>
+        <link rel="shortcut icon" href="/logo.png" />
       </Head>
       <Stack
         as="main"
