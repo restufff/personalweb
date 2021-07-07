@@ -1,9 +1,21 @@
 import React from "react";
 import NextLink from "next/link";
-import { useColorMode, Heading, Text, Flex, Box, Link } from "@chakra-ui/react";
+import {
+  useColorMode,
+  Heading,
+  Text,
+  Flex,
+  Box,
+  Link,
+  Tag,
+  TagLabel,
+  TagLeftIcon,
+  TagRightIcon,
+  TagCloseButton,
+} from "@chakra-ui/react";
 import { parseISO, format } from "date-fns";
 
-const BlogPost = ({ title, publishedAt, summary, slug }) => {
+const BlogPost = ({ title, publishedAt, summary, slug, tag }) => {
   const { colorMode } = useColorMode();
   const secondaryTextColor = {
     light: "gray.700",
@@ -40,7 +52,12 @@ const BlogPost = ({ title, publishedAt, summary, slug }) => {
               {format(parseISO(publishedAt), "MMMM dd, yyyy")}
             </Text>
           </Flex>
-          <Text color={secondaryTextColor[colorMode]}>{summary}</Text>
+          <Text mb={1} color={secondaryTextColor[colorMode]}>
+            {summary}
+          </Text>
+          <Tag variant="solid" color="white" colorScheme="teal">
+            {tag}
+          </Tag>
         </Box>
       </Link>
     </NextLink>
