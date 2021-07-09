@@ -32,8 +32,20 @@ export default function Blog({ posts }) {
   return (
     <>
       <Head>
-        <title>Works - Restu Fauzi</title>
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, width=device-width"
+          key="viewport"
+        />
         <link rel="shortcut icon" href="/logo.png" />
+        <title>Home - Restu Fauzi</title>
+        <meta
+          name="description"
+          content="A self-taught junior Front-End developer. Focusing Front-End journey
+          and crafting beautiful apps with React and ❤️"
+        />
+        <meta property="og:title" content="Restu Fauzi | Front-end Developer" />
+        <meta property="og:url" content={`https://restufauzi.netlify.app/`} />
       </Head>
       <Container>
         <Stack

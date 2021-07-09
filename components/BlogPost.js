@@ -8,9 +8,6 @@ import {
   Box,
   Link,
   Tag,
-  TagLabel,
-  TagLeftIcon,
-  TagRightIcon,
   TagCloseButton,
 } from "@chakra-ui/react";
 import { parseISO, format } from "date-fns";
