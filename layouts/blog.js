@@ -35,7 +35,7 @@ export default function BlogLayout({ children, frontMatter }) {
         m="0 auto 4rem auto"
         maxWidth="680px"
         w="100%"
-        px={2}
+        px={5}
       >
         <Flex
           flexDirection="column"
@@ -44,7 +44,7 @@ export default function BlogLayout({ children, frontMatter }) {
           maxWidth="700px"
           w="100%"
         >
-          <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
+          <Heading letterSpacing="wide" mb={2} as="h1" size="xl">
             {frontMatter.title}
           </Heading>
         </Flex>
