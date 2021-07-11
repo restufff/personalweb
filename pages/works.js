@@ -64,13 +64,13 @@ export default function Blog({ posts }) {
             px={4}
           >
             <Heading mb={4}>Works ({posts.length} posts)</Heading>
-            <InputGroup mb={4} mr={4} w="100%">
+            <InputGroup mb={4} mr={4} w="100%" pr={1}>
               <Input
                 aria-label="Search by title"
                 placeholder="Search by title"
                 onChange={(e) => setSearchValue(e.target.value)}
               />
-              <InputRightElement>
+              <InputRightElement mr={2}>
                 <SearchIcon color="gray.300" />
               </InputRightElement>
             </InputGroup>
