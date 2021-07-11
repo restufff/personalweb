@@ -63,9 +63,7 @@ export default function Blog({ posts }) {
             maxWidth="700px"
             px={4}
           >
-            <Heading letterSpacing="tight" mb={4} as="h1" size="2xl">
-              Works ({posts.length} posts)
-            </Heading>
+            <Heading mb={4}>Works ({posts.length} posts)</Heading>
             <InputGroup mb={4} mr={4} w="100%">
               <Input
                 aria-label="Search by title"

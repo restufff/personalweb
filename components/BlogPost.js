@@ -39,15 +39,6 @@ const BlogPost = ({ title, publishedAt, summary, slug, tag }) => {
                 {title}
               </Heading>
             </Flex>
-
-            <Text
-              color="gray.500"
-              minWidth="140px"
-              textAlign={["left", "right"]}
-              mb={[4, 0]}
-            >
-              {format(parseISO(publishedAt), "MMMM dd, yyyy")}
-            </Text>
           </Flex>
           <Text mb={1} color={secondaryTextColor[colorMode]}>
             {summary}

@@ -33,7 +33,7 @@ export default function BlogLayout({ children, frontMatter }) {
         justifyContent="center"
         alignItems="flex-start"
         m="0 auto 4rem auto"
-        maxWidth="700px"
+        maxWidth="680px"
         w="100%"
         px={2}
       >
@@ -47,34 +47,6 @@ export default function BlogLayout({ children, frontMatter }) {
           <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
             {frontMatter.title}
           </Heading>
-          <Flex
-            justify="space-between"
-            align={["initial", "center"]}
-            direction={["column", "row"]}
-            mt={2}
-            w="100%"
-            mb={4}
-          >
-            <Flex align="center">
-              <Avatar
-                size="xs"
-                name="Restu fauzi"
-                src="../images/portrait.jpeg"
-                mr={2}
-              />
-              <Text fontSize="sm" color={textColor[colorMode]}>
-                {frontMatter.by}
-                {"Restu Fauzi / "}
-                {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}
-              </Text>
-            </Flex>
-            <Text
-              fontSize="sm"
-              color="gray.500"
-              minWidth="100px"
-              mt={[2, 0]}
-            ></Text>
-          </Flex>
         </Flex>
         {children}
       </Stack>

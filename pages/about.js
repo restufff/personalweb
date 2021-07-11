@@ -44,7 +44,7 @@ export default function About() {
         alignItems="flex-start"
         m="0 auto 4rem auto"
         maxWidth="700px"
-        px={2}
+        px={4}
       >
         <Flex
           flexDirection="column"

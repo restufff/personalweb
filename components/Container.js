@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  useColorMode,
-  Button,
-  Flex,
-  Box,
-  Stack,
-  StackDivider,
-  Divider,
-} from "@chakra-ui/react";
+import { useColorMode, Button, Flex, Box } from "@chakra-ui/react";
 import NextLink from "next/link";
 import styled from "@emotion/styled";
 
@@ -37,6 +29,7 @@ const Container = ({ children }) => {
     top: 0;
     backdrop-filter: saturate(180%) blur(20px);
     transition: height 0.5s, line-height 0.5s;
+    transition-timing-function: ease-in-out;
   `;
 
   return (
@@ -45,12 +38,12 @@ const Container = ({ children }) => {
         flexDirection="row"
         justifyContent="space-between"
         alignItems="center"
-        maxWidth="800px"
+        maxWidth="760px"
         minWidth="356px"
         width="100%"
         bg={bgColor[colorMode]}
         as="nav"
-        px={[6, 6, 6]}
+        px={[7, 6, 6]}
         py={2}
         mt={8}
         mb={[0, 0, 8]}
@@ -96,7 +89,7 @@ const Container = ({ children }) => {
         flexDirection="column"
         bg={bgColor[colorMode]}
         color={color[colorMode]}
-        px={[7, 4, 4]}
+        px={[5, 4, 4]}
         mt={[4, 8, 8]}
       >
         {children}
