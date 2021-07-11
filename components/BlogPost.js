@@ -8,11 +8,9 @@ import {
   Box,
   Link,
   Tag,
-  TagCloseButton,
 } from "@chakra-ui/react";
-import { parseISO, format } from "date-fns";
 
-const BlogPost = ({ title, publishedAt, summary, slug, tag }) => {
+const BlogPost = ({ title, summary, slug, tag }) => {
   const { colorMode } = useColorMode();
   const secondaryTextColor = {
     light: "gray.700",
