@@ -64,6 +64,20 @@ export default function About() {
           alignItems="flex-start"
           maxWidth="700px"
         >
+          <Heading mb={3}>Working Experience</Heading>
+          <Heading as="h2" size="md" fontWeight="medium" mb={1}>
+            PT Smartfren Telecom Tbk
+          </Heading>
+          <Text color={colorSecondary[colorMode]}>
+            Software Quality Assurance · 2021 - Present
+          </Text>
+        </Flex>
+        <Flex
+          flexDirection="column"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          maxWidth="700px"
+        >
           <Heading mb={3}>Education</Heading>
           <Heading as="h2" size="md" fontWeight="medium" mb={1}>
             Universitas Nasional
