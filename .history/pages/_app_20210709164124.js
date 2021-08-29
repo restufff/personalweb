@@ -7,7 +7,6 @@ import {
 import customTheme from "../styles/theme";
 import { Global, css } from "@emotion/react";
 import { prismLightTheme, prismDarkTheme } from "../styles/prism";
-import Script from "next/script";
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode();
@@ -44,35 +43,18 @@ const GlobalStyle = ({ children }) => {
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-
-      <Script strategy="lazyOnload">
-        {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-              page_path: window.location.pathname,
-            });
-                `}
-      </Script>
-      <ChakraProvider resetCSS theme={customTheme}>
-        <ColorModeProvider
-          options={{
-            initialColorMode: "light",
-            useSystemColorMode: true,
-          }}
-        >
-          <GlobalStyle>
-            <Component {...pageProps} />
-          </GlobalStyle>
-        </ColorModeProvider>
-      </ChakraProvider>
-    </>
+    <ChakraProvider resetCSS theme={customTheme}>
+      <ColorModeProvider
+        options={{
+          initialColorMode: "light",
+          useSystemColorMode: true,
+        }}
+      >
+        <GlobalStyle>
+          <Component {...pageProps} />
+        </GlobalStyle>
+      </ColorModeProvider>
+    </ChakraProvider>
   );
 }
 

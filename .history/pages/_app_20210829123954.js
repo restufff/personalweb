@@ -7,7 +7,6 @@ import {
 import customTheme from "../styles/theme";
 import { Global, css } from "@emotion/react";
 import { prismLightTheme, prismDarkTheme } from "../styles/prism";
-import Script from "next/script";
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode();
