@@ -7,9 +7,7 @@ import {
 import customTheme from "../styles/theme";
 import { Global, css } from "@emotion/react";
 import { prismLightTheme, prismDarkTheme } from "../styles/prism";
-import * as ga from "../lib/ga";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
+import Script from "next/script";
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode();
@@ -45,34 +43,36 @@ const GlobalStyle = ({ children }) => {
 };
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter();
-
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      ga.pageview(url);
-    };
-    //When the component is mounted, subscribe to router changes
-    //and log those page views
-    router.events.on("routeChangeComplete", handleRouteChange);
-    // If the component is unmounted, unsubscribe
-    // from the event with the `off` method
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
   return (
-    <ChakraProvider resetCSS theme={customTheme}>
-      <ColorModeProvider
-        options={{
-          initialColorMode: "light",
-          useSystemColorMode: true,
-        }}
-      >
-        <GlobalStyle>
-          <Component {...pageProps} />
-        </GlobalStyle>
-      </ColorModeProvider>
-    </ChakraProvider>
+    <>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+
+      <Script strategy="lazyOnload">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+                `}
+      </Script>
+      <ChakraProvider resetCSS theme={customTheme}>
+        <ColorModeProvider
+          options={{
+            initialColorMode: "light",
+            useSystemColorMode: true,
+          }}
+        >
+          <GlobalStyle>
+            <Component {...pageProps} />
+          </GlobalStyle>
+        </ColorModeProvider>
+      </ChakraProvider>
+    </>
   );
 }
 

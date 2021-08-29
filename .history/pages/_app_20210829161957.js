@@ -8,8 +8,6 @@ import customTheme from "../styles/theme";
 import { Global, css } from "@emotion/react";
 import { prismLightTheme, prismDarkTheme } from "../styles/prism";
 import * as ga from "../lib/ga";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode();
