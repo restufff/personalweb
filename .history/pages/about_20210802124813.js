@@ -69,7 +69,7 @@ export default function About() {
             PT Smartfren Telecom Tbk
           </Heading>
           <Text color={colorSecondary[colorMode]}>
-            QA Automation Engineer · 2021 - Present
+            Software Quality Assurance · 2021 - Present
           </Text>
         </Flex>
         <Flex

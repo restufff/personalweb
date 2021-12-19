@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "start-server-and-test dev 3000 cypress:open",
     "cypress:open": "cypress open"
   },
   "dependencies": {
@@ -32,7 +31,6 @@
     "remark-slug": "^6.0.0"
   },
   "devDependencies": {
-    "cypress": "^8.3.1",
-    "start-server-and-test": "^1.14.0"
+    "cypress": "^8.3.1"
   }
 }
