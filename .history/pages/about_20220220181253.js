@@ -9,10 +9,9 @@ import {
 } from "@chakra-ui/react";
 import Container from "../components/Container";
 import { LinkIcon } from "@chakra-ui/icons";
-import { IoLogoLinkedin, IoMail } from "react-icons/io5";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { IoMail } from "react-icons/io5";
+import { SiGithub } from "react-icons/si";
 import { Icon } from "@chakra-ui/react";
-import { FaLinkedin, FaLinkedinIn } from "react-icons/fa";
 
 export default function About() {
   const { colorMode } = useColorMode();
@@ -86,7 +85,7 @@ export default function About() {
           <Heading as="h2" size="md" fontWeight="medium" mb={1}>
             Universitas Nasional
           </Heading>
-          <Text mb={1} color={colorSecondary[colorMode]}>
+          <Text mb={5} color={colorSecondary[colorMode]}>
             Informatics · 2018 - 2022
           </Text>
         </Flex>
@@ -112,22 +111,11 @@ export default function About() {
             Github
           </Heading>
           <Link
-            mb={5}
             href="https://github.com/restufff"
             isExternal
             color={colorSecondary[colorMode]}
           >
             <Icon as={SiGithub} /> https://github.com/restufff
-          </Link>
-          <Heading as="h2" size="md" fontWeight="medium" mb={1}>
-            Linkedin
-          </Heading>
-          <Link
-            color={colorSecondary[colorMode]}
-            href="https://www.linkedin.com/in/restufauzi/"
-            isExternal
-          >
-            <Icon as={SiLinkedin} /> Restu Fauzi
           </Link>
         </Flex>
       </Stack>

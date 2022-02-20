@@ -69,7 +69,7 @@ export default function About() {
             PT Smartfren Telecom Tbk
           </Heading>
           <Text color={colorSecondary[colorMode]}>
-            QA Automation Engineer · 2021 - Present
+            QA Automation (Internship) · August 2021 - February 2022
           </Text>
         </Flex>
         <Flex
@@ -83,12 +83,8 @@ export default function About() {
             Universitas Nasional
           </Heading>
           <Text mb={5} color={colorSecondary[colorMode]}>
-            Informatics Engineering · 2018 - Present
+            Informatics · 2018 - 2022
           </Text>
-          <Heading as="h2" size="md" fontWeight="medium" mb={1}>
-            SMAN 64 JKT
-          </Heading>
-          <Text color={colorSecondary[colorMode]}>IPS · 2013 - 2016</Text>
         </Flex>
         <Flex
           flexDirection="column"

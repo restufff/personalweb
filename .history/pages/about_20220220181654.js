@@ -9,9 +9,10 @@ import {
 } from "@chakra-ui/react";
 import Container from "../components/Container";
 import { LinkIcon } from "@chakra-ui/icons";
-import { IoMail } from "react-icons/io5";
-import { SiGithub } from "react-icons/si";
+import { IoLogoLinkedin, IoMail } from "react-icons/io5";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { Icon } from "@chakra-ui/react";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function About() {
   const { colorMode } = useColorMode();
@@ -69,7 +70,10 @@ export default function About() {
             PT Smartfren Telecom Tbk
           </Heading>
           <Text color={colorSecondary[colorMode]}>
-            Software Quality Assurance · 2021 - Present
+            QA Automation (Internship) ·
+            <Text color={colorSecondary[colorMode]}>
+              August 2021 - February 2022
+            </Text>
           </Text>
         </Flex>
         <Flex
@@ -83,12 +87,8 @@ export default function About() {
             Universitas Nasional
           </Heading>
           <Text mb={5} color={colorSecondary[colorMode]}>
-            Informatics Engineering · 2018 - Present
+            Informatics · 2018 - 2022
           </Text>
-          <Heading as="h2" size="md" fontWeight="medium" mb={1}>
-            SMAN 64 JKT
-          </Heading>
-          <Text color={colorSecondary[colorMode]}>IPS · 2013 - 2016</Text>
         </Flex>
         <Flex
           flexDirection="column"
@@ -112,11 +112,22 @@ export default function About() {
             Github
           </Heading>
           <Link
+            mb={5}
             href="https://github.com/restufff"
             isExternal
             color={colorSecondary[colorMode]}
           >
             <Icon as={SiGithub} /> https://github.com/restufff
+          </Link>
+          <Heading as="h2" size="md" fontWeight="medium" mb={1}>
+            Linkedin
+          </Heading>
+          <Link
+            color={colorSecondary[colorMode]}
+            href="https://www.linkedin.com/in/restufauzi/"
+            isExternal
+          >
+            <Icon as={FaLinkedin} /> Restu Fauzi
           </Link>
         </Flex>
       </Stack>

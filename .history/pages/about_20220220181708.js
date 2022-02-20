@@ -86,7 +86,7 @@ export default function About() {
           <Heading as="h2" size="md" fontWeight="medium" mb={1}>
             Universitas Nasional
           </Heading>
-          <Text mb={1} color={colorSecondary[colorMode]}>
+          <Text mb={5} color={colorSecondary[colorMode]}>
             Informatics · 2018 - 2022
           </Text>
         </Flex>
