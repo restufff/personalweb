@@ -45,12 +45,7 @@ export default function Index() {
           <Heading mb={2}>Hi, I'm Restu Fauzi</Heading>
           <Text color={colorSecondary[colorMode]}>
             A self-taught junior Front-End developer. Focusing Front-End journey
-            and crafting beautiful apps with React and ❤️ | Currently working as
-            QA especially Quality Assurance Automation Engineer who has
-            responsibility to provide test script for running testing such smoke
-            testing, regression testing, sanity testing, functional testing In
-            many platforms example; Mobile Apps, Web Apps, and Restful API using
-            Katalon Studio, Cypress, and Selenium Web Driver.
+            and crafting beautiful apps with React and ❤️
           </Text>
         </Flex>
       </Stack>

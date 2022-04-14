@@ -56,7 +56,12 @@ export default function About() {
           <Heading mb={3}>About Me</Heading>
           <Text color={colorSecondary[colorMode]}>
             A self taught who trying to focusing the front-end journey, hoping
-            someday will be mastering all the front-end skills.
+            someday will be mastering all the front-end skills. Currently
+            working as QA especially Quality Assurance Automation Engineer who
+            has responsibility to provide test script for running testing such
+            smoke testing, regression testing, sanity testing, functional
+            testing In many platforms example; Mobile Apps, Web Apps, and
+            Restful API
           </Text>
         </Flex>
         <Flex
@@ -66,14 +71,19 @@ export default function About() {
           maxWidth="700px"
         >
           <Heading mb={3}>Working Experience</Heading>
-          <Heading as="h2" size="md" fontWeight="medium" mb={1}>
+          <Heading as="h2" size="md" fontWeight="medium" mb={2}>
             PT Smartfren Telecom Tbk
           </Heading>
           <Text color={colorSecondary[colorMode]}>
-            QA Automation (Internship) ·
-            <Text color={colorSecondary[colorMode]}>
-              August 2021 - February 2022
-            </Text>
+            QA Automation · August 2021 - February 2022
+            {/* <Text color={colorSecondary[colorMode]}></Text> */}
+          </Text>
+          <Heading as="h2" size="md" fontWeight="medium" mt={5} mb={2}>
+            PT Indocyber Global Teknologi (IGLO)
+          </Heading>
+          <Text color={colorSecondary[colorMode]}>
+            QA Automation Engineer · April 2022 - Present
+            {/* <Text color={colorSecondary[colorMode]}></Text> */}
           </Text>
         </Flex>
         <Flex
@@ -86,7 +96,7 @@ export default function About() {
           <Heading as="h2" size="md" fontWeight="medium" mb={1}>
             Universitas Nasional
           </Heading>
-          <Text mb={3} color={colorSecondary[colorMode]}>
+          <Text mb={1} color={colorSecondary[colorMode]}>
             Informatics · 2018 - 2022
           </Text>
         </Flex>

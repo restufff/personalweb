@@ -70,8 +70,15 @@ export default function About() {
             PT Smartfren Telecom Tbk
           </Heading>
           <Text color={colorSecondary[colorMode]}>
+            QA Automation · August 2021 - February 2022
+            {/* <Text color={colorSecondary[colorMode]}></Text> */}
+          </Text>
+          <Heading as="h2" size="md" fontWeight="medium" mt={5}>
+            PT Indocyber Global Teknologi (IGLO)
+          </Heading>
+          <Text color={colorSecondary[colorMode]}>
             QA Automation (Internship) ·
-            <Text color={colorSecondary[colorMode]}>
+            {/* <Text color={colorSecondary[colorMode]}> */}
               August 2021 - February 2022
             </Text>
           </Text>

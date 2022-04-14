@@ -9,9 +9,10 @@ import {
 } from "@chakra-ui/react";
 import Container from "../components/Container";
 import { LinkIcon } from "@chakra-ui/icons";
-import { IoMail } from "react-icons/io5";
+import { IoLogoLinkedin, IoMail } from "react-icons/io5";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { Icon } from "@chakra-ui/react";
+import { FaLinkedin, FaLinkedinIn } from "react-icons/fa";
 
 export default function About() {
   const { colorMode } = useColorMode();
@@ -74,6 +75,15 @@ export default function About() {
               August 2021 - February 2022
             </Text>
           </Text>
+          <Heading as="h2" size="md" fontWeight="medium" mb={3}>
+            PT Indocyber Global Teknologi (IGLO)
+          </Heading>
+          <Text color={colorSecondary[colorMode]}>
+            QA Automation (Internship) ·
+            <Text color={colorSecondary[colorMode]}>
+              August 2021 - February 2022
+            </Text>
+          </Text>
         </Flex>
         <Flex
           flexDirection="column"
@@ -85,7 +95,7 @@ export default function About() {
           <Heading as="h2" size="md" fontWeight="medium" mb={1}>
             Universitas Nasional
           </Heading>
-          <Text mb={5} color={colorSecondary[colorMode]}>
+          <Text mb={1} color={colorSecondary[colorMode]}>
             Informatics · 2018 - 2022
           </Text>
         </Flex>
@@ -111,6 +121,7 @@ export default function About() {
             Github
           </Heading>
           <Link
+            mb={5}
             href="https://github.com/restufff"
             isExternal
             color={colorSecondary[colorMode]}
@@ -121,7 +132,6 @@ export default function About() {
             Linkedin
           </Heading>
           <Link
-            mb={5}
             color={colorSecondary[colorMode]}
             href="https://www.linkedin.com/in/restufauzi/"
             isExternal
