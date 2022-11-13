@@ -56,7 +56,12 @@ export default function About() {
           <Heading mb={3}>About Me</Heading>
           <Text color={colorSecondary[colorMode]}>
             A self taught who trying to focusing the front-end journey, hoping
-            someday will be mastering all the front-end skills.
+            someday will be mastering all the front-end skills. Currently
+            working as QA especially Quality Assurance Automation Engineer who
+            has responsibility to provide test script for running testing such
+            smoke testing, regression testing, sanity testing, functional
+            testing In many platforms example; Mobile Apps, Web Apps, and
+            Restful API using Katalon Studio, Cypress, and Selenium Web Driver.
           </Text>
         </Flex>
         <Flex
@@ -73,12 +78,12 @@ export default function About() {
             QA Automation · August 2021 - February 2022
             {/* <Text color={colorSecondary[colorMode]}></Text> */}
           </Text>
-          <Heading as="h2" size="md" fontWeight="medium" mt={5}>
-            PT Indocyber Global Teknologi (IGLO)
+          <Heading as="h2" size="md" fontWeight="medium" mt={3} mb={1}>
+            PT Federal International Finance (FIFGROUP)
           </Heading>
           <Text color={colorSecondary[colorMode]}>
-            QA Automation · April 2022 - Present
-            {/* <Text color={colorSecondary[colorMode]}> */}
+            QA Automation Engineer · April 2022 - Present
+            {/* <Text color={colorSecondary[colorMode]}></Text> */}
           </Text>
         </Flex>
         <Flex

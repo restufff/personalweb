@@ -79,7 +79,7 @@ export default function About() {
             {/* <Text color={colorSecondary[colorMode]}></Text> */}
           </Text>
           <Heading as="h2" size="md" fontWeight="medium" mt={3} mb={1}>
-            PT Indocyber Global Teknologi (IGLO)
+            PT Federal International Finance (FIFGROUP)
           </Heading>
           <Text color={colorSecondary[colorMode]}>
             QA Automation Engineer · April 2022 - Present
