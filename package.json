@@ -32,7 +32,7 @@
     "remark-slug": "^6.0.0"
   },
   "devDependencies": {
-    "cypress": "^8.3.1",
+    "cypress": "^8.7.0",
     "start-server-and-test": "^1.14.0"
   }
 }
