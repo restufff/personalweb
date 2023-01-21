@@ -48,8 +48,8 @@ export default function Index() {
             working as QA especially Quality Assurance Automation Engineer who
             has responsibility to provide test script for running testing such
             smoke testing, regression testing, sanity testing, functional
-            testing In many platforms etc; Mobile Apps, Web Apps, and Restful
-            API using Katalon Studio, Cypress, and Selenium Web Driver.
+            testing In many platforms example; Mobile Apps, Web Apps, and
+            Restful API using Katalon Studio, Cypress, and Selenium Web Driver.
           </Text>
         </Flex>
       </Stack>

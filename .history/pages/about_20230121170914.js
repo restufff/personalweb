@@ -71,18 +71,18 @@ export default function About() {
           maxWidth="700px"
         >
           <Heading mb={3}>Working Experience</Heading>
+          <Heading as="h2" size="md" fontWeight="medium" mt={3} mb={1}>
+            PT Smartfren Telecom Tbk
+          </Heading>
+          <Text color={colorSecondary[colorMode]}>
+            QA Automation · August 2021 - February 2022
+            {/* <Text color={colorSecondary[colorMode]}></Text> */}
+          </Text>
           <Heading as="h2" size="md" fontWeight="medium" mb={1}>
             PT Federal International Finance (FIFGROUP)
           </Heading>
           <Text color={colorSecondary[colorMode]}>
             QA Automation Engineer · April 2022 - Present
-            {/* <Text color={colorSecondary[colorMode]}></Text> */}
-          </Text>
-          <Heading as="h2" size="md" fontWeight="medium" mt={4} mb={1}>
-            PT Smartfren Telecom Tbk
-          </Heading>
-          <Text color={colorSecondary[colorMode]}>
-            QA Automation · August 2021 - February 2022
             {/* <Text color={colorSecondary[colorMode]}></Text> */}
           </Text>
         </Flex>
