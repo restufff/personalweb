@@ -5,7 +5,7 @@ name: Production workflow
 on:
   push:
     tags:
-      - "git tag v1.0"
+      - "v*"
 
 # Jobs to carry out
 jobs:
