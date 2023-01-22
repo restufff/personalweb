@@ -55,18 +55,16 @@ export default function About() {
         >
           <Heading mb={3}>About Me</Heading>
           <Text color={colorSecondary[colorMode]}>
-            A self-taught who tries to focus on the front-end and SDET journey.
-            <br />
+            A self-taught who try to focus on the front-end and SDET journey.
             Why do I learn to be Software Developer (Front End especially) and
-            SDET or QA Engineer simultaneously❓ Because I want to see both
-            perspectives as Software Developer and QA Engineer in ensuring the
-            product quality of software. <br />
-            Currently working as QA especially Quality Assurance Automation
-            Engineer who has a responsibility to provide test scripts for
-            running testing such as smoke testing, regression testing, sanity
-            testing, and functional testing On many platforms, etc; Mobile Apps,
-            Web Apps, and Restful API using Katalon Studio, Cypress, and
-            Selenium Web Driver.
+            SDET or QA Engineer at the same time? Because I want to see in both
+            prespection as Software Developer and as QA Engineer in ensure the
+            product quality of software. Currently work as QA especially Quality
+            Assurance Automation Engineer who has a responsibility to provide
+            test scripts for running testing such as smoke testing, regression
+            testing, sanity testing, and functional testing On many platforms
+            etc; Mobile Apps, Web Apps, and Restful API using Katalon Studio,
+            Cypress, and Selenium Web Driver.
           </Text>
         </Flex>
         <Flex

@@ -45,7 +45,13 @@ export default function Index() {
           <Heading mb={2}>Hi, I'm Restu Fauzi</Heading>
           <Text color={colorSecondary[colorMode]}>
             Hi there! 👋 Welcome to my website, the place where I upload my
-            works related to Front End and QA Engineer as my portfolio.
+            works as my portfolio A self-taught junior Front-End developer & QA
+            Engineer. Currently working as QA especially Quality Assurance
+            Automation Engineer who has responsibility to provide test script
+            for running testing such smoke testing, regression testing, sanity
+            testing, functional testing In many platforms etc; Mobile Apps, Web
+            Apps, and Restful API using Katalon Studio, Cypress, and Selenium
+            Web Driver.
           </Text>
         </Flex>
       </Stack>
