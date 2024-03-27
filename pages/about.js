@@ -87,7 +87,7 @@ export default function About() {
             PT Smartfren Telecom Tbk
           </Heading>
           <Text color={colorSecondary[colorMode]}>
-            QA Automation · August 2021 - February 2022
+            QA Automation · April 2021 - April 2022
             {/* <Text color={colorSecondary[colorMode]}></Text> */}
           </Text>
         </Flex>
