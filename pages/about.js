@@ -55,18 +55,14 @@ export default function About() {
         >
           <Heading mb={3}>About Me</Heading>
           <Text color={colorSecondary[colorMode]}>
-            A self-taught who tries to focus on the front-end and SDET journey.
+            As a self-taught individual, I'm concurrently mastering both front-end development and software testing. 
+            Why? Because I believe understanding both perspectives—building software and ensuring its quality—is essential for delivering top-notch products.
             <br />
-            Why do I learn to be Software Developer (Front End especially) and
-            SDET or QA Engineer simultaneously❓ Because I want to see both
-            perspectives as Software Developer and QA Engineer in ensuring the
-            product quality of software. <br />
-            Currently working as QA especially Quality Assurance Automation
-            Engineer who has a responsibility to provide test scripts for
-            running testing such as smoke testing, regression testing, sanity
-            testing, and functional testing On many platforms, etc; Mobile Apps,
-            Web Apps, and Restful API using Katalon Studio, Cypress, and
-            Selenium Web Driver.
+            Currently, I work as a Quality Assurance Automation Engineer, where I craft test scripts for various platforms like Mobile Apps, Web Apps, and Restful APIs. I utilize tools like Katalon Studio, Cypress, and Selenium WebDriver to execute tests such as smoke testing, regression testing, and functional testing.
+             <br />
+            Learning front-end development alongside QA engineering enables me to grasp the full picture of software development. This knowledge not only helps me identify potential issues early but also enhances collaboration with developers.
+            <br />
+            In essence, my journey aims to blend front-end development skills with testing proficiency to deliver high-quality software that exceeds user expectations.
           </Text>
         </Flex>
         <Flex
