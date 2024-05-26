@@ -73,14 +73,39 @@ export default function About() {
         >
           <Heading mb={3}>Working Experience</Heading>
           <Heading as="h2" size="md" fontWeight="medium" mb={1}>
-            PT Federal International Finance (FIFGROUP)
+          <Link
+            mb={5}
+            href="https://www.linkedin.com/company/asa-r%C3%A9n/"
+            isExternal
+          >
+            Asa Rén
+          </Link>
           </Heading>
           <Text color={colorSecondary[colorMode]}>
-            QA Automation Engineer · April 2022 - Present
+            QA Engineer · May 2024 - Present
             {/* <Text color={colorSecondary[colorMode]}></Text> */}
           </Text>
           <Heading as="h2" size="md" fontWeight="medium" mt={4} mb={1}>
-            PT Smartfren Telecom Tbk
+          <Link
+            mb={5}
+            href="https://www.linkedin.com/company/pt.-federal-international-finance/"
+            isExternal
+          >
+            FIFGROUP
+          </Link>
+          </Heading>
+          <Text color={colorSecondary[colorMode]}>
+            QA Engineer · April 2022 - May 2024
+            {/* <Text color={colorSecondary[colorMode]}></Text> */}
+          </Text>
+          <Heading as="h2" size="md" fontWeight="medium" mt={4} mb={1}>
+          <Link
+            mb={5}
+            href="https://www.linkedin.com/company/smartfren-telecom/"
+            isExternal
+          >
+            Smartfren
+          </Link>
           </Heading>
           <Text color={colorSecondary[colorMode]}>
             QA Automation · April 2021 - April 2022
@@ -98,7 +123,7 @@ export default function About() {
             Universitas Nasional
           </Heading>
           <Text mb={1} color={colorSecondary[colorMode]}>
-            Informatics · 2018 - 2022
+            Computer Science · 2018 - 2022
           </Text>
         </Flex>
         <Flex

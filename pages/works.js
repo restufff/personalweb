@@ -25,9 +25,12 @@ export default function Blog({ posts }) {
       (a, b) =>
         Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
     )
-    .filter((frontMatter) =>
-      frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
-    );
+    .filter((frontMatter) => {
+      const titleMatch = frontMatter.title.toLowerCase().includes(searchValue.toLowerCase());
+      const bodyMatch = frontMatter.summary.toLowerCase().includes(searchValue.toLowerCase());
+      const tag = frontMatter.tag.toLowerCase().includes(searchValue.toLowerCase());
+      return titleMatch || bodyMatch || tag;
+    });
 
   return (
     <>
@@ -66,8 +69,8 @@ export default function Blog({ posts }) {
             <Heading mb={4}>Works ({posts.length} posts)</Heading>
             <InputGroup mb={4} mr={4} w="100%" pr={1}>
               <Input
-                aria-label="Search by title"
-                placeholder="Search by title"
+                aria-label="Search by title, summary, and tag"
+                placeholder="Search by title, summary, and tag"
                 onChange={(e) => setSearchValue(e.target.value)}
               />
               <InputRightElement mr={2}>
