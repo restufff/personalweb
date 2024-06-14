@@ -75,19 +75,6 @@ export default function About() {
           <Heading as="h2" size="md" fontWeight="medium" mb={1}>
           <Link
             mb={5}
-            href="https://www.linkedin.com/company/asa-r%C3%A9n/"
-            isExternal
-          >
-            Asa Rén
-          </Link>
-          </Heading>
-          <Text color={colorSecondary[colorMode]}>
-            QA Engineer · May 2024 - Present
-            {/* <Text color={colorSecondary[colorMode]}></Text> */}
-          </Text>
-          <Heading as="h2" size="md" fontWeight="medium" mt={4} mb={1}>
-          <Link
-            mb={5}
             href="https://www.linkedin.com/company/pt.-federal-international-finance/"
             isExternal
           >
